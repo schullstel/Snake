@@ -34,7 +34,7 @@ public class StageSnake {
 
     private boolean isSnakeOutOfBounds() {
         for (Point2D point : snake_.position()) {
-            if (point.getX() < 0 || point.getX() > STAGE_WIDTH_MULTIPLIER || point.getY() < 0 || point.getY() > STAGE_HEIGHT_MULTIPLIER) {
+            if (point.getX() < 0 || point.getX() >= STAGE_WIDTH_MULTIPLIER || point.getY() < 0 || point.getY() >= STAGE_HEIGHT_MULTIPLIER) {
                 return true;
             }
         }
